@@ -44,7 +44,7 @@ $ kontena vault write REGISTRY_STORAGE_S3_SECRETKEY <secret_key>
 Create registry service:
 
 ```
-$ kontena registry create --s3-bucket=<bucket_name> --s3-region=<optional_aws_region>
+$ kontena registry create --s3-bucket=<bucket_name> --s3-region=<optional_aws_region> --s3
 ```
 
 #### Azure storage backend
@@ -58,7 +58,7 @@ $ kontena vault write REGISTRY_STORAGE_AZURE_ACCOUNTKEY <azure_account_key>
 Create registry service:
 
 ```
-$ kontena registry create --azure-account-name=<account_name> --azure-container-name=<container_name>
+$ kontena registry create --azure-account-name=<account_name> --azure-container-name=<container_name> --s3-v4auth
 ```
 
 ### Accessing Image Registry
